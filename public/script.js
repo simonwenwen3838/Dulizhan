@@ -189,8 +189,10 @@ navItems.forEach(function(item) {
     const panel = item.querySelector('.mega-panel');
     if (!panel) return; // skip items without mega menu
 
-    // Click to toggle (for mobile / touch)
+    // Click: desktop follows the link (navigates to /products/ etc.);
+    // mobile / touch keeps the expand-toggle behaviour
     trigger.addEventListener('click', function(e) {
+if (!window.matchMedia('(max-width: 1024px), (hover: none)').matches) return;
 e.preventDefault();
 e.stopPropagation();
 const isActive = item.classList.contains('active');

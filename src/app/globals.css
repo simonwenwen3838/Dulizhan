@@ -567,7 +567,7 @@ footer { background: var(--grey-darker); color: #B0B0B0; padding: 48px 0 24px; }
 
         /* Product block */
         .product-block {
-            max-width: 900px; margin: 0 auto 64px; scroll-margin-top: 90px;
+            max-width: 900px; margin: 0 auto 64px; scroll-margin-top: 180px;
         }
         .product-block:last-child { margin-bottom: 0; }
 
@@ -1053,6 +1053,9 @@ footer { background: var(--grey-darker); color: #B0B0B0; padding: 48px 0 24px; }
         .links a { color: var(--green); text-decoration: none; font-size: 14px; font-weight: 500; }
         .links a:hover { text-decoration: underline; }
     
-/* anchor offset for sticky header (157px) */
-section[id] { scroll-margin-top: 170px; }
+/* anchor offset for the shared sticky header (measured ~157-160px tall) */
+section[id],
+div.product-block[id],
+article[id],
+h1[id], h2[id], h3[id], h4[id] { scroll-margin-top: 180px; }
 

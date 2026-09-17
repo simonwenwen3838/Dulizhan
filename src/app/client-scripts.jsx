@@ -15,5 +15,35 @@ export default function ClientScripts() {
     };
   }, []);
 
+  // Fallback for hash links: a fresh document load + hydration does not always
+  // scroll to the fragment, so scroll to it manually once the page is ready.
+  useEffect(() => {
+    let timer = null;
+
+    const scrollToHash = () => {
+      const hash = window.location.hash;
+      if (!hash || hash === '#') return;
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => {
+        try {
+          const target = document.querySelector(hash);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        } catch (err) {
+          // invalid selector (e.g. "#1abc") - ignore silently
+        }
+      }, 300);
+    };
+
+    scrollToHash();
+    window.addEventListener('hashchange', scrollToHash);
+
+    return () => {
+      if (timer) clearTimeout(timer);
+      window.removeEventListener('hashchange', scrollToHash);
+    };
+  }, []);
+
   return null;
 }
