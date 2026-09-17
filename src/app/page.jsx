@@ -1,127 +1,11 @@
-﻿'use client';
+'use client';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Page() {
   return (
     <>
-<div className="mega-overlay" id="megaOverlay"></div>
-<header>
-    <div className="container">
-        <div className="nav">
-            
-            <a href="#home" className="logo">MAYAMED <span className="logo-badge">Medical</span></a>
-
-            
-            <div className="nav-center">
-                <ul className="nav-links">
-                    
-                    <li className="nav-item">
-                        <a href="#home">Home</a>
-                    </li>
-
-                    
-                    <li className="nav-item">
-                        <a href="#products">Products <span className="caret">▼</span></a>
-                        <div className="mega-panel">
-                            <div className="mega-grid mega-products-grid">
-                                
-                                <div>
-                                    <div className="mega-col-title">Imaging Equipment</div>
-                                    <a href="/products#xray" className="mega-link"><span className="mega-link-icon">📡</span><span className="mega-link-text"><span className="mega-link-name">Digital X-ray</span><span className="mega-link-desc">DR systems</span></span></a>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">🖥️</span><span className="mega-link-text"><span className="mega-link-name">CT Scanner</span><span className="mega-link-desc">Multi-slice CT</span></span></a>
-                                    <a href="/products#mri" className="mega-link"><span className="mega-link-icon">🧲</span><span className="mega-link-text"><span className="mega-link-name">MRI System</span><span className="mega-link-desc">1.5T superconducting</span></span></a>
-                                </div>
-                                
-                                <div>
-                                    <div className="mega-col-title">Diagnosis & Lab</div>
-                                    <a href="/products#ultrasound" className="mega-link"><span className="mega-link-icon">🔊</span><span className="mega-link-text"><span className="mega-link-name">Ultrasound Scanner</span><span className="mega-link-desc">Doppler imaging</span></span></a>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">🩸</span><span className="mega-link-text"><span className="mega-link-name">Hematology Analyzer</span><span className="mega-link-desc">3-part blood analyzer</span></span></a>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">🔬</span><span className="mega-link-text"><span className="mega-link-name">Lab Equipment</span><span className="mega-link-desc">Centrifuge, analyzer</span></span></a>
-                                </div>
-                                
-                                <div>
-                                    <div className="mega-col-title">Life Support</div>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">💉</span><span className="mega-link-text"><span className="mega-link-name">Anesthesia Machine</span><span className="mega-link-desc">OR ventilation</span></span></a>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">🫁</span><span className="mega-link-text"><span className="mega-link-name">Ventilator</span><span className="mega-link-desc">ICU ventilator</span></span></a>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">🩺</span><span className="mega-link-text"><span className="mega-link-name">Hemodialysis</span><span className="mega-link-desc">Dialysis machine</span></span></a>
-                                </div>
-                                
-                                <div className="mega-featured">
-                                    <h4>Complete Hospital Project</h4>
-                                    <p>One-stop equipment supply for new hospital construction — imaging, lab, ICU, OR, and more.</p>
-                                    <a href="#contact" className="btn-mini">Get a Quote →</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    
-                    <li className="nav-item">
-                        <a href="#advantages">Solutions <span className="caret">▼</span></a>
-                        <div className="mega-panel">
-                            <div className="mega-grid mega-solutions-grid">
-                                <div>
-                                    <div className="mega-col-title">By Department</div>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">📡</span><span className="mega-link-text"><span className="mega-link-name">Radiology</span><span className="mega-link-desc">X-ray, CT, MRI</span></span></a>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">🔊</span><span className="mega-link-text"><span className="mega-link-name">Ultrasound</span><span className="mega-link-desc">Scanner, Doppler</span></span></a>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">🫁</span><span className="mega-link-text"><span className="mega-link-name">ICU</span><span className="mega-link-desc">Ventilator, monitor</span></span></a>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">🩺</span><span className="mega-link-text"><span className="mega-link-name">Dialysis Center</span><span className="mega-link-desc">Hemodialysis</span></span></a>
-                                </div>
-                                <div>
-                                    <div className="mega-col-title">By Project Type</div>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">🏥</span><span className="mega-link-text"><span className="mega-link-name">New Hospital</span><span className="mega-link-desc">Complete setup</span></span></a>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">♻️</span><span className="mega-link-text"><span className="mega-link-name">Renovation</span><span className="mega-link-desc">Equipment upgrade</span></span></a>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">📦</span><span className="mega-link-text"><span className="mega-link-name">Supply Only</span><span className="mega-link-desc">Bulk procurement</span></span></a>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">⚙️</span><span className="mega-link-text"><span className="mega-link-name">OEM/ODM</span><span className="mega-link-desc">Custom branding</span></span></a>
-                                </div>
-                                <div className="mega-featured">
-                                    <h4>Africa After-sales</h4>
-                                    <p>Local after-sales team in Africa for installation, training, and maintenance support.</p>
-                                    <a href="#contact" className="btn-mini">Learn More →</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    
-                    <li className="nav-item">
-                        <a href="#factory">About <span className="caret">▼</span></a>
-                        <div className="mega-panel">
-                            <div className="mega-grid mega-about-grid">
-                                <div>
-                                    <div className="mega-col-title">Company</div>
-                                    <a href="#factory" className="mega-link"><span className="mega-link-icon">🏭</span><span className="mega-link-text"><span className="mega-link-name">Factory Tour</span><span className="mega-link-desc">30,000+ m² facility</span></span></a>
-                                    <a href="#advantages" className="mega-link"><span className="mega-link-icon">🛡️</span><span className="mega-link-text"><span className="mega-link-name">Our Advantages</span><span className="mega-link-desc">Why choose us</span></span></a>
-                                    <a href="#cases" className="mega-link"><span className="mega-link-icon">📊</span><span className="mega-link-text"><span className="mega-link-name">Project Cases</span><span className="mega-link-desc">Africa hospital projects</span></span></a>
-                                    <a href="#" className="mega-link"><span className="mega-link-icon">✅</span><span className="mega-link-text"><span className="mega-link-name">Certifications</span><span className="mega-link-desc">CE certified</span></span></a>
-                                </div>
-                                <div className="mega-featured">
-                                    <h4>Since 2010</h4>
-                                    <p>15+ years of medical equipment manufacturing. 40+ elite team members serving Africa.</p>
-                                    <a href="#contact" className="btn-mini">Contact Us →</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    
-                    <li className="nav-item"><a href="#cases">Cases</a></li>
-                    <li className="nav-item"><a href="/blog">Blog</a></li>
-                    <li className="nav-item"><a href="#faq">FAQ</a></li>
-                    <li className="nav-item"><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            
-            <div className="nav-right">
-                <span className="nav-lang">🌐 EN</span>
-                <a href="#contact" className="btn-quote">Get a Quote</a>
-            </div>
-
-            
-            <button className="nav-toggle" onclick="toggleMobileNav()">☰</button>
-        </div>
-    </div>
-</header>
+<Header />
 
 
 <section className="hero" id="home" style={{paddingTop: '80px'}}>
@@ -165,29 +49,29 @@ export default function Page() {
             <p>Complete medical equipment range for hospital projects</p>
         </div>
         <div className="product-categories">
-            <a href="/products#xray" className="product-card">
+            <a href="/products/#xray" className="product-card">
                 <div className="product-card-img"><div className="product-card-img-placeholder">📡</div></div>
                 <div className="product-card-body"><h3>X-ray Machine</h3><p>Digital radiography systems</p></div>
             </a>
-            <a href="/products#ultrasound" className="product-card">
+            <a href="/products/#ultrasound" className="product-card">
                 <div className="product-card-img"><div className="product-card-img-placeholder">🔊</div></div>
                 <div className="product-card-body"><h3>Ultrasound Scanner</h3><p>Doppler imaging systems</p></div>
             </a>
-            <a href="/products#mri" className="product-card">
+            <a href="/products/#mri" className="product-card">
                 <div className="product-card-img"><div className="product-card-img-placeholder">🧲</div></div>
                 <div className="product-card-body"><h3>MRI System</h3><p>1.5T superconducting magnet</p></div>
             </a>
         </div>
         <div className="product-grid">
-            <a href="/products#xray" className="product-mini"><div className="product-mini-icon">📡</div><div className="product-mini-name">Digital X-ray</div></a>
-            <a href="/products#ultrasound" className="product-mini"><div className="product-mini-icon">🔊</div><div className="product-mini-name">Doppler Ultrasound</div></a>
-            <a href="/products#mri" className="product-mini"><div className="product-mini-icon">🧲</div><div className="product-mini-name">MRI 1.5T</div></a>
-            <a href="#" className="product-mini"><div className="product-mini-icon">🖥️</div><div className="product-mini-name">CT Scanner</div></a>
-            <a href="#" className="product-mini"><div className="product-mini-icon">🩸</div><div className="product-mini-name">Hematology Analyzer</div></a>
-            <a href="#" className="product-mini"><div className="product-mini-icon">🔬</div><div className="product-mini-name">Lab Equipment</div></a>
-            <a href="#" className="product-mini"><div className="product-mini-icon">💉</div><div className="product-mini-name">Anesthesia Machine</div></a>
-            <a href="#" className="product-mini"><div className="product-mini-icon">🫁</div><div className="product-mini-name">Ventilator</div></a>
-            <a href="#" className="product-mini"><div className="product-mini-icon">🩺</div><div className="product-mini-name">Hemodialysis</div></a>
+            <a href="/products/#xray" className="product-mini"><div className="product-mini-icon">📡</div><div className="product-mini-name">Digital X-ray</div></a>
+            <a href="/products/#ultrasound" className="product-mini"><div className="product-mini-icon">🔊</div><div className="product-mini-name">Doppler Ultrasound</div></a>
+            <a href="/products/#mri" className="product-mini"><div className="product-mini-icon">🧲</div><div className="product-mini-name">MRI 1.5T</div></a>
+            <a href="/products/" className="product-mini"><div className="product-mini-icon">🖥️</div><div className="product-mini-name">CT Scanner</div></a>
+            <a href="/products/" className="product-mini"><div className="product-mini-icon">🩸</div><div className="product-mini-name">Hematology Analyzer</div></a>
+            <a href="/products/" className="product-mini"><div className="product-mini-icon">🔬</div><div className="product-mini-name">Lab Equipment</div></a>
+            <a href="/products/" className="product-mini"><div className="product-mini-icon">💉</div><div className="product-mini-name">Anesthesia Machine</div></a>
+            <a href="/products/" className="product-mini"><div className="product-mini-icon">🫁</div><div className="product-mini-name">Ventilator</div></a>
+            <a href="/products/" className="product-mini"><div className="product-mini-icon">🩺</div><div className="product-mini-name">Hemodialysis</div></a>
         </div>
     </div>
 </section>
@@ -238,23 +122,23 @@ export default function Page() {
             <p>Equipment solutions for every hospital department</p>
         </div>
         <div className="app-grid">
-            <a href="#" className="app-card">
+            <a href="/solutions/#departments" className="app-card">
                 <div className="app-card-img"><span className="app-card-icon">📡</span></div>
                 <div className="app-card-body"><h3>Radiology</h3><p>X-ray, CT, MRI</p></div>
             </a>
-            <a href="#" className="app-card">
+            <a href="/solutions/#departments" className="app-card">
                 <div className="app-card-img"><span className="app-card-icon">🔊</span></div>
                 <div className="app-card-body"><h3>Ultrasound</h3><p>Scanner, Doppler</p></div>
             </a>
-            <a href="#" className="app-card">
+            <a href="/solutions/#departments" className="app-card">
                 <div className="app-card-img"><span className="app-card-icon">🫁</span></div>
                 <div className="app-card-body"><h3>ICU</h3><p>Ventilator, Monitor</p></div>
             </a>
-            <a href="#" className="app-card">
+            <a href="/solutions/#departments" className="app-card">
                 <div className="app-card-img"><span className="app-card-icon">🩺</span></div>
                 <div className="app-card-body"><h3>Dialysis</h3><p>Hemodialysis Machine</p></div>
             </a>
-            <a href="#" className="app-card">
+            <a href="/solutions/#departments" className="app-card">
                 <div className="app-card-img"><span className="app-card-icon">🔬</span></div>
                 <div className="app-card-body"><h3>Laboratory</h3><p>Analyzer, Centrifuge</p></div>
             </a>
@@ -637,11 +521,11 @@ export default function Page() {
                     title="MAYAMED Office Location - Guangzhou"
                     style={{pointerEvents: 'auto'}}>
                 </iframe>
-                <a className="map-fullscreen-btn" href="https://www.openstreetmap.org/?mlat=23.0070&amp;mlon=113.3530#map=16/23.0070/113.3530" target="_blank" rel="noopener">
+                <a className="map-fullscreen-btn" href="https://www.openstreetmap.org/?mlat=23.0070&amp;mlon=113.3530#map=16/23.0070/113.3530" target="_blank" rel="noopener noreferrer">
                     <span>⛶</span> Open Full Map
                 </a>
                 <div className="map-badge">
-                    📍 <a href="https://www.openstreetmap.org/?mlat=23.0070&amp;mlon=113.3530#map=16/23.0070/113.3530" target="_blank" rel="noopener">View larger map</a>
+                    📍 <a href="https://www.openstreetmap.org/?mlat=23.0070&amp;mlon=113.3530#map=16/23.0070/113.3530" target="_blank" rel="noopener noreferrer">View larger map</a>
                 </div>
             </div>
         </div>
@@ -649,54 +533,10 @@ export default function Page() {
 </section>
 
 
-<footer>
-    <div className="container">
-        <div className="footer-grid">
-            <div className="footer-col">
-                <div className="footer-logo">MAYAMED</div>
-                <p>Guangzhou Maya Medical Equipment Co., Ltd.</p>
-                <p>One-Stop Hospital Project Solution Supplier</p>
-                <p style={{marginTop: '12px'}}>Room 102, First floor, No.2 Building, Bohou Industrial Park, No.773 Xingnan Avenue, Nancun Town, Panyu District, Guangzhou, Guangdong, China</p>
-                <p>Email: nancy@medicalequipment168.com</p>
-                <p>WhatsApp: +86 18925044116</p>
-            </div>
-            <div className="footer-col">
-                <h4>Products</h4>
-                <a href="#">X-ray Machine</a><br />
-                <a href="#">Ultrasound Scanner</a><br />
-                <a href="#">Lab Equipment</a><br />
-                <a href="#">MRI</a><br />
-                <a href="#">CT Scanner</a><br />
-                <a href="#">Anesthesia Machine</a><br />
-                <a href="#">Ventilator</a><br />
-                <a href="#">Hemodialysis</a>
-            </div>
-            <div className="footer-col">
-                <h4>Company</h4>
-                <a href="#home">Home</a><br />
-                <a href="#advantages">Advantages</a><br />
-                <a href="#factory">Factory</a><br />
-                <a href="#cases">Project Cases</a><br />
-                <a href="#faq">FAQ</a><br />
-                <a href="#contact">Contact Us</a><br />
-                <a href="#">Download Catalog</a>
-            </div>
-            <div className="footer-col">
-                <h4>Connect</h4>
-                <a href="https://www.facebook.com/MayamedMedical" target="_blank">Facebook</a><br />
-                <a href="#">LinkedIn</a><br />
-                <a href="#">YouTube</a><br />
-                <a href="https://wa.me/8618925044116" target="_blank">WhatsApp</a><br />
-            </div>
-        </div>
-        <div className="footer-bottom">
-            © 2010-2026 MAYAMED - Guangzhou Maya Medical Equipment Co., Ltd. All Rights Reserved.
-        </div>
-    </div>
-</footer>
+<Footer />
 
 
-<a href="https://wa.me/8618925044116?text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20send%20me%20more%20details." target="_blank" rel="noopener" className="float-wa" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/8618925044116?text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20send%20me%20more%20details." target="_blank" rel="noopener noreferrer" className="float-wa" aria-label="Chat on WhatsApp">
     <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.967-.94 1.165-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.078 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.032 6.987 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
     </svg>
@@ -704,3 +544,4 @@ export default function Page() {
     </>
   );
 }
+
