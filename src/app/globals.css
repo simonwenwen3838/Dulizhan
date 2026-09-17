@@ -1042,7 +1042,7 @@ footer { background: var(--grey-darker); color: #B0B0B0; padding: 48px 0 24px; }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root { --green: #2E7D32; --green-light: #4CAF50; --green-lighter: #E8F5E9; --grey-dark: #333; --grey: #757575; }
-        body { font-family: 'Segoe UI', Roboto, Arial, sans-serif; background: #F5F5F5; color: var(--grey-dark); display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+        body { font-family: 'Segoe UI', Roboto, Arial, sans-serif; background: #F5F5F5; color: var(--grey-dark);  align-items: center; justify-content: center; min-height: 100vh; }
         .container { text-align: center; padding: 40px 24px; }
         .error-code { font-size: 120px; font-weight: 900; color: var(--green); line-height: 1; margin-bottom: 16px; }
         .error-title { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
